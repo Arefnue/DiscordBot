@@ -76,7 +76,7 @@ async def on_member_join(member):
     joined += 1
     for channel in member.server.channels:
         if str(channel) == "general":
-            await client.send_message(f"""Welcome to the server {member.mention}""")
+            await client.send_message(f"""NDNG ailesine hoş geldin {member.mention}!""")
 
 
 @client.event  # This event runs whenever a user updates: status, game playing, avatar, nickname or role
