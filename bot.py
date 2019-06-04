@@ -51,7 +51,7 @@ async def on_message(message):
     if str(message.channel) in channels and str(message.author) in valid_users:
     
         if "!hello" in message.content.lower():
-            await message.channel.send("HI!")
+            await message.channel.send("Selam")
         elif message.content == "!users":
             await message.channel.send(f"""Members: {id.member_count}""")
 
@@ -65,7 +65,7 @@ async def on_message(message):
     #Helping
     if message.content == "!help":
         embed = discord.Embed(title="Help on BOT", description="Some useful commands")
-        embed.add_field(name="!hello", value="Greets the user")
+        embed.add_field(name="!hello", value="Deneme asdasd")
         embed.add_field(name="!users", value="Prints number of users")
         await message.channel.send(content=None, embed=embed)
         
