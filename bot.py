@@ -16,7 +16,7 @@ serverID = int(server[0])
 token = server[1]
 
 
-bot = commands.Bot(command_prefix = '!')
+bot = commands.Bot(command_prefix = '*')
 
 @bot.command()
 async def load(ctx, extension):
